@@ -21,13 +21,13 @@ http://archive.vn/Bss88
 
 - Github: [@chelmerrox](https://github.com/chelmerrox)
 - Twitter: [@chelmerrox](https://twitter.com/chelmerrox)
-- Linkedin: [Losalini Rokocakau](https://linkedin.com/losalini-rokocakau)
+- Linkedin: [Losalini Rokocakau](https://www.linkedin.com/in/losalini-rokocakau)
 
 👤 **Anand Kumar**
 
 - Github: [@jamestucker1988](https://github.com/jamestucker1988)
 - Twitter: [anandku74070598](https://twitter.com/anandku74070598)
-- Linkedin: [Anand Kumar](https://linkedin.com/anand-kumar-9128)
+- Linkedin: [Anand Kumar](https://linkedin.com/in/anand-kumar-9128)
 
 ## 🤝 Contributing
 
