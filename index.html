@@ -1,10 +1,397 @@
 <!DOCTYPE html>
 <html lang="">
-    <head>
-        <link href="styles/style.css" rel="stylesheets" type="text/css"/>
-        <meta charset="utf-8"/>
-    </head>
-    <body>
+
+<head>
+    <link href="styles/style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--Link in order to use Google icons (Google apps icon) within the HTML file-->
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <!--Navigation bar with search bar-->
+
+        <!--<div class="fixed-effect"></div>!-->
+        <nav class="nav1">
+            <div class="container-1" id="container-1-1">
+                <img src="images/menu-bar-icon.png" alt="menu bar" id="menu-bar" width="40" height="30"/>
+                <img src="images/youtube-logo.PNG" alt="youtube logo" id="youtube-logo" width="80" height="30"/>
+            </div>
+
+            <!-- <div class="container-1" id="container-1-2"> -->
+            <form action="" method="get" name="form-1">
+                <span id="search-and-button">
+                    <input type="search" name="search-bar" placeholder="Search" id="search-bar" size="80" class="search">
+                    <button id="search-button" class="search"><i class="material-icons" id="search-icon">&#xe8b6;</i></button>
+                </span>
+            </form>
+            <!-- </div> -->
+
+            <div class="container-1" id="container-1-3">
+                <img src="images/upload.svg" alt="Upload icon" id="upload-icon" width="20rem" height="20rem" />
+                <a href="" id="sign-in">Sign In</a>
+            </div>
+        </nav>
+
+
+        <!--Choose- language container-->
+
+        <div class="choose"></div>
+        <img src="images/choose-language.PNG" alt="Choose Language" id="choose-language-image" width=100% height="min-height" />
+
+        <!------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!--Main part with the 1st container: video, comments section etc
+                and 2nd container: recommended videos -->
+        <main class="main-containers">
+            <section id="display">
+                <!-----------------------------------------------------------------------------------------------below language screen-->
+                <section id="transform1">
+                <iframe width="800" height="600" src="https://www.youtube.com/embed/V74l_zS1x8E"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div id="enclose">
+                <h3 id="h3">Contributing to Open Source Part 1: The Easy Way</h3>
+
+
+
+                <span class="youtuber-info expression-youtuber-info">
+                
+                
+                    <a href="">
+                        <img src="images/youtuber-avatar.PNG" alt="Youtuber's avatar" width="40" height="40" />
+                    </a>
+                    <span>The Odin Project <div> <button type="button" id="subscribe"><i class="material-icons"></i>Subscribe</button><span>799</span></div></span>
+                    <div id="views">50,016 views</div>
+                </span>
+    </div>
+
+
+
+
+
+
+                <!---------------------------------------------------------------------------------------------------------------------------------------->
+                <div class="expression expression-youtuber-info">
+                    <div>
+                        <button class="save & plus" id="a">
+                            <img src="images/add-to-button.PNG" alt="Add to button" width="30" height="25">
+                        </button>
+
+                        <button id="b"><i class="material-icons">&#xe03b;</i>save</button>
+
+                        <button id="c"><i class="material-icons">&#xe5d3;</i>more</button>
+                    </div>
+                    <!---------------------------------------------------------------------------------------------------------------------------------------->
+                    <div  id="exp-number">
+                        <button class="like-dislike-btn" ><i class="material-icons"  >&#xe8dc;</i><span class="like-dislike-axis">359 </span></button>
+                        <button class="like-dislike-btn"><i class="material-icons">&#xe8db;</i>14</button>
+
+                    </div>
+
+
+                </div>
+                <!--Further video information-->
+                <div>
+                    <p class="content-info" id="video-info"> How do you contibute to open source? In this video, I'll describe the easiest way to make a simple
+                        <span class="content-info">contibution to an open source project -- without using the command line, a text editor, "forking a repo". or</span>
+                        <span class="content-info">even touching Git outside of Github. I'll also describe what kinds of contributions open source software</span>
+                        <span class="content-info">projects are typically looking for. As an example, I use submitting a student solution to a web development</span>
+                        <span class="content-info">exercise from The Odin Project, a free online curriculum for learning web development with Ruby on Rails.</span>
+                        <span class="content-info">You can find more information about that project at http://theodinproject.com.</span>
+                    </p>
+                    <p id="show-more">SHOW MORE</p>
+                </div>
+
+                <!--Number of comments section-->
+
+                <section class="number-of-comments-section">
+                    <p id="number-of-comments">15 Comments</p>
+
+
+                    <a href="" id="sort-by"><i class="material-icons">&#xe164;</i>SORT BY</a>
+                    <!--Posting a comment section-->
+                    <div>
+                        <form action="" method="get" name="form-2">
+                            <img src="images/user-avatar.PNG" alt="User's avatar" width="25" height="25" /><textarea placeholder="Add a public comment..." rows="2" cols="75"></textarea>
+                        </form>
+                    </div>
+                </section>
+                <!--Comments section-->
+
+                <!--Comments section-->
+                <section id="loading-comments">
+                    <!--Loading comments section; code is from the source page: http://archive.vn/Bss88-->
+                    <div style="font-size:100%;background-color: transparent; text-align:center;line-height:20px;white-space:nowrap;border-width: 0px; border-style: none; margin: 0px; padding: 1em; border-color: white; " >
+                        <span title="Loading icon" style="font-size:100%;background-image:url('data:image/gif;base64,R0lGODlhFAAUAJEDAMzMzLOzs39/f////yH/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgADACwAAAAAFAAUAAACPJyPqcuNItyCUJoQBo0ANIxpXOctYHaQpYkiHfM2cUrCNT0nqr4uudsz/IC5na/2Mh4Hu+HR6YBaplRDAQAh+QQFCgADACwEAAIADAAGAAACFpwdcYupC8BwSogR46xWZHl0l8ZYQwEAIfkEBQoAAwAsCAACAAoACgAAAhccMKl2uHxGCCvO+eTNmishcCCYjWEZFgAh+QQFCgADACwMAAQABgAMAAACFxwweaebhl4K4VE6r61DiOd5SfiN5VAAACH5BAUKAAMALAgACAAKAAoAAAIYnD8AeKqcHIwwhGntEWLkO3CcB4biNEIFACH5BAUKAAMALAQADAAMAAYAAAIWnDSpAHa4GHgohCHbGdbipnBdSHphAQAh+QQFCgADACwCAAgACgAKAAACF5w0qXa4fF6KUoVQ75UaA7Bs3yeNYAkWACH5BAUKAAMALAIABAAGAAwAAAIXnCU2iMfaRghqTmMp1moAoHyfIYIkWAAAOw==');background-color: transparent; width:20px;height:20px;vertical-align:middle;display:inline-block;background-position: 50% 50%; background-repeat: no-repeat; border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; ">
+                        </span>
+                        <span style="font-size:100%;background-color: transparent; vertical-align:middle;border-width: 0px; border-style: none; margin: 0px; padding: 0px; border-color: white; ">
+                            Loading... </span>
+                    </div>
+                </section>
+                </section>
+            </section>
+
+            <!--
+            2nd container-----------------------------------------------------------------------------------------------------------------------------------------
+            ---->
+
+
+
+            <!--Sidebar with recommended videos-->
+            <aside class="main-containers1">
+                <!--Autoplay button-->
+
+                <p style="font-size:1.5rem;" id="main-containers1-p">Upload</p>
+                <img src="images/autoplay-button.PNG" alt="Autoplay image" width="250" height="40" id="side-header" />
+
+
+
+
+
+                <!--First recommended video-->
+
+                <!--Recommended video 1-->
+
+                <img src="images/thumbnail-1.PNG" alt="Thumbnail 1" width="240" height="150" />
+                <p>Contributing to Open Source Part II: The Real Way<span class="textadjust1">The Odin Project</span>
+
+                    <span class="textadjust1"> 29,985 views </span>
+
+                </p>
+
+
+
+
+
+                <!--Recommended video 2-->
+
+
+                <img src="images/thumbnail-2.PNG" alt="Thumbnail 2" width="240" height="150" />
+
+
+                <p>'How to Get A Job at the Big 4 - Amazon, Facebook, Google &amp; Mcrosoft' by<span class="textadjust1">imtiana</span>
+
+                    <span class="textadjust1">981,543 views</span></p>
+
+
+                <!--Recommended video 3-->
+
+
+                <img src="images/thumbnail-3.PNG" alt="Thumbnail 3" width="240" height="150" />
+
+
+                <p>Programming in Visual Basic .NET How to Connect Access Database to <span class="textadjust1">iBasskung</span> <span class="textadjust1">16,130,993 views</span></p>
+
+
+                <!--Recommended video 4-->
+
+
+                <img src="images/thumbnail-4.PNG" alt="Thumbnail 4" width="240" height="150" />
+
+
+                <p>Why Microsoft Paid $7.5B for the Future of Software! = A Case <span class="textadjust1">Valuetainment</span> <span class="textadjust1">444,634 views</span></p>
+
+
+
+
+                <!--Recommended video 5-->
+
+
+                <img src="images/thumbnail-5.PNG" alt="Thumbnail 5" width="240" height="150" />
+
+
+                <p>How to create a 3D Terrain with Google Maps and height maps in Photoshop <span class="textadjust1">Orange Box Ceo</span> <span class="textadjust1">6,269,391 views</span></p>
+
+
+
+                <!--Recommended video 6-->
+
+
+                <img src="images/thumbnail-6.PNG" alt="Thumbnail 6" width="240" height="150" />
+
+
+                <p>Convolutional Neural Networks (CNNs) explained <span class="textadjust1">deeplizard</span> <span class="textadjust1">239,752 views</span></p>
+
+
+
+                <!--Recommended video 7-->
+
+
+                <img src="images/thumbnail-7.PNG" alt="Thumbnail 7" width="240" height="150" />
+
+
+                <p>Top 10 Linux Job interview Questions <span class="textadjust1">tutorialLinux</span> <span class="textadjust1">1,236,003 views</span></p>
+
+
+                <!--Recommended video 8-->
+
+
+                <img src="images/thumbnail-8.PNG" alt="Thumbnail 8" width="240" height="150" />
+
+
+                <p>Running an SQL Injection Attack - Computerphil<span class="textadjust1">Computerphile</span> <span class="textadjust1">2,217,477 views</span> </p>
+
+
+                <!--Recommended video 9-->
+
+
+                <img src="images/thumbnail-9.PNG" alt="Thumbnail 9" width="240" height="150" />
+
+
+                <p>How to prepare for product based companies? <span class="textadjust1">Gate Lecture by Ravindrababu Ra</span> <span class="textadjust1">291,215 views</span></p>
+
+
+
+                <!--Recommended video 10-->
+
+
+                <img src="images/thumbnail-10.PNG" alt="Thumbnail 10" width="240" height="150" />
+
+
+                <p>Visual Basic .Net : Search in Access Database - DataGridView <span class="textadjust1">iBasskung</span> <span class="textadjust1">6,047,577 views</span></p>
+
+
+
+                <!--Recommended video 11-->
+
+
+                <img src="images/thumbnail-11.PNG" alt="Thumbnail 11" width="240" height="150" />
+
+
+                <p>How to Convert pdf to word without software<span class="textadjust1">karim hamdadi</span> <span class="textadjust1">12,275,519 views</span> </p>
+
+
+                <!--Recommended video 12-->
+
+
+                <img src="images/thumbnail-12.PNG" alt="Thumbnail 12" width="240" height="150" />
+
+
+                <p>What Python Projects Should I Build to Get a Job?<span class="textadjust1">Real Python</span> <span class="textadjust1">169,155 views</span> </p>
+
+
+                <!--Recommended video 13-->
+
+
+                <img src="images/thumbnail-13.PNG" alt="Thumbnail 13" width="240" height="150" />
+
+
+                <p>How To NOT Look Like A Tourist | What To Wear In Europe<span class="textadjust1">Audrey Coyne</span> <span class="textadjust1">3,432,133 views</span> </p>
+
+
+                <!--Recommended video 14-->
+
+
+                <img src="images/thumbnail-14.PNG" alt="Thumbnail 14" width="240" height="150" />
+
+
+                <p>Your First GitHUb pull Request (in 10 Mins)<span class="textadjust1">Jackson Bates</span> <span class="textadjust1">31,930 views</span> </p>
+
+
+                <!--Recommended video 15-->
+
+
+                <img src="images/thumbnail-15.PNG" alt="Thumbnail 15" width="240" height="150" />
+
+
+                <p>Top signs of an inexperiences programmer <span class="textadjust1">TechLead</span> <span class="textadjust1">928,523 views</span></p>
+
+
+
+                <!--Recommended video 16-->
+
+
+                <img src="images/thumbnail-16.PNG" alt="Thumbnail 16" width="240" height="150" />
+
+
+                <p>Why I left my job at Google (as a software engineer)<span class="textadjust1">TechLead</span> <span class="textadjust1">1,684,582 views</span> </p>
+
+
+
+                <!--Recommended video 17-->
+
+
+                <img src="images/thumbnail-17.PNG" alt="Thumbnail 17" width="240" height="150" />
+
+
+                <p>Max Stoiber - I want you to contribute to open source<span class="textadjust1">ReactRally</span> <span class="textadjust1">3,134 views</span> </p>
+
+
+                <!--Recommended video 18-->
+
+
+                <img src="images/thumbnail-18.PNG" alt="Thumbnail 18" width="240" height="150" />
+
+
+                <p>How to Learn Anything Fast - Josh Kaufman<span class="textadjust1">The RSA</span> <span class="textadjust1">3,157,647 views</span> </p>
+
+
+                <!--Recommended video 19-->
+
+
+                <img src="images/thumbnail-19.PNG" alt="Thumbnail 19" width="240" height="150" />
+
+
+                <p>Git &amp; GitHun: Pull requests (10/11) <span class="textadjust1">Codecourse</span> <span class="textadjust1">78,624 views</span></p>
+
+                <!--Recommended video 20 -->
+                <img src="images/thumbnail-20.PNG" alt="thumnail 20" width="240" height="150" />
+                <p>Git &amp; GitHun: Pull requests (10/11) <span class="textadjust1">Codecourse</span> <span class="textadjust1">78,624 views</span></p>
+            </aside>
+
+        </main>
+
+        <!--Footer of web page-->
+        <footer class="footer1">
+            <div id="footer-top">
+                <img src="images/youtube-logo.PNG" alt="youtube-logo" width="100" height="50" id="youtube-logo" />
+                <form action="" method="get" name="form-3" class="footer-buttons">
+                    <select class="footer-forms">
+                        <i class="material-icons"></i>
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                        <option value="Spanish">Spanish</option>
+                        <i class="material-icons">&#xe5c5;</i>
+                    </select>
+                </form>
+                <form action="" method="get" name="form-4" class="footer-buttons">
+                    <select class="footer-forms">
+                        <option value="United States">United States</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="Europe">Europe</option>
+                        <i class="material-icons">&#xe5c5;</i>
+                    </select>
+                </form>
+                <form action="" method="get" name="form-5" class="footer-buttons">
+                    <select class="footer-forms">
+                        <option value="Restricted Mode off">Restricted Mode: Off</option>
+                        <option value="Restricted Mode on">Restricted Mode: On</option>
+                    </select>
+                </form>
+
+                <button class="footer-buttons" class="history-and-help-buttons">
+                    <i class="material-icons" style="font-size:1rem;">
+                        &#xe88c;</i>
+                    <span>History</span>
+                </button>
+                <button class="footer-buttons" class="history-and-help-buttons"><i class="material-icons" style="font-size:1rem;">&#xe8fd;</i><span>Help</span></button>
+            </div>
+
+            <div id="footer-links">
+                <a href="" class="bottom-links-1">About</a>
+                <a href="" class="bottom-links-1">Press</a>
+
+
+                <a href="" class="bottom-links-1">Copyright</a>
+                <a href="" class="bottom-links-1">Creators</a>
+                <a href="" class="bottom-links-1">Advertise</a>
+                <a href="" class="bottom-links-1">Developers</a>
+            </div>
+            <div><a href="" class="bottom-links-2">Terms</a>
+                <a href="" class="bottom-links-2">Privacy</a>
+                <a href="" class="bottom-links-2">Policy &amp; Safety</a>
+                <a href="" class="bottom-links-2">Test new features</a>
+
+            </div>
+        </footer>
 
     </body>
 </html>
